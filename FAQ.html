@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>dublin bike</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script>
+      window.onload = changeview;
+      function changeview() {
+        console.log(1);
+        var a = document.body.clientWidth < 500 ? "100%" : "35%";
+        var newelement = document.querySelectorAll(".swiper-slide");
+        for (i = 0; i < newelement.length; i++) {
+          newelement[i].style.width = a;
+        }
+      }
+    </script>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./js/adaptation.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="./css/top-bottom.css" />
+    <style>
+      .swiper-container {
+        width: 100%;
+        padding-bottom: 20px;
+        height: 60vh;
+      }
+      .swiper-slide {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: contain;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      .quickguide {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgb(131, 131, 131, 0.6);
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: rgb(0, 36, 36);
+        line-height: 4;
+        text-transform: capitalize;
+      }
+      .quickguide .line {
+        display: block;
+        align-self: center;
+        width: 10%;
+        height: 2px;
+        background-color: rgb(1, 29, 29);
+      }
+      .sub-question {
+        padding: 2rem;
+      }
+      .sub-question .subque {
+        list-style-type: circle;
+      }
+      .sub-question .subque li {
+        padding: 5px 0;
+      }
+      .sub-question h3 {
+        text-transform: capitalize;
+        font-size: 22px;
+      }
+      .sub-question .subque li a {
+        display: block;
+        line-height: 1.5;
+        color: rgb(0, 54, 54);
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg menu">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./images/title.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon fa fa-navicon"
+            style="
+              background: none;
+              color: #fff;
+              font-size: 2rem;
+              display: block;
+              text-align: center;
+              transform: translateY(30%);
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link submenu" href="./aboutus.html">
+              About us</a
+            >
+            <a class="nav-item nav-link submenu" href="./subscription.html"
+              >Subscription</a
+            >
+            <a class="nav-item nav-link submenu" href="./activities.html"
+              >Explore Dublin</a
+            >
+            <a class="nav-item nav-link submenu active" href="./FAQ.html"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h2 title="app-guide" class="quickguide">
+        <span class="line"></span> <b>·</b> quick guide of APP <b>·</b>
+        <span class="line"></span>
+      </h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper" id="app-guide">
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/step1.jpg);"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/step2.jpg);"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/unlock.jpg);"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/step3.jpg);"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/step4.jpg);"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/lock.jpg);"
+          ></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="Question">
+        <h2 title="app-guide" class="quickguide" style="padding-top: 2rem;">
+          <span class="line"></span> <b>·</b> Frequently Asked Questions
+          <b>·</b>
+          <span class="line"></span>
+        </h2>
+        <div class="container">
+          <ul class="question row">
+            <li
+              class="sub-question col-sm-12 col-md-12 col-lg-4"
+              style="border-left: none;"
+            >
+              <h3>Subscriptions</h3>
+              <ul class="subque">
+                <li>
+                  <a href="#"
+                    >Can I have a Dublin Bikes Annual Card and a Leap Card
+                    associated with my account at the same time?
+                  </a>
+                </li>
+                <li><a href="#"> What can I do to avoid ‘Card Clashes’?</a></li>
+                <li>
+                  <a href="#">
+                    Can I pay for my Dublin Bikes membership card annual
+                    renewal, 3-day ticket and bike journey costs at
+                    www.leapcard.ie?</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sub-question col-sm-12 col-md-12 col-lg-4">
+              <h3>Stations and bikes</h3>
+              <ul class="subque">
+                <li><a href="#">What are stands at the stations for?</a></li>
+                <li><a href="#"> How are the bikes locked?</a></li>
+                <li>
+                  <a href="#"
+                    >How long do I have to wait before I can take another
+                    bike?</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sub-question col-sm-12 col-md-12 col-lg-4">
+              <h3>General questions</h3>
+              <ul class="subque">
+                <li>
+                  <a href="#"
+                    >What should I do in the event of theft or an accident</a
+                  >
+                </li>
+                <li>
+                  <a href="#">What should I do if I lose my Leap Card?</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >How do I contact the call centre from outside of Ireland?
+                  </a>
+                </li>
+                <li><a href="#">Are helmets provided?</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container" style="max-width: 100%; margin: 0;">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-4 download">
+            <div class="apple-download">
+              <a
+                href="
+                    #"
+              >
+                <img src="./images/androidapp1.png" alt="bike-android"
+              /></a>
+            </div>
+            <div class="apple-download">
+              <a href="#">
+                <img src="./images/appleapp1.png" alt="bike-android"
+              /></a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-xs-12 col-md-3 outlink container">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" style="font-size: 24px;"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-twitter" style="font-size: 24px;"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-instagram" style="font-size: 24px;"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2 contactus">
+            <a href="#">contact us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "3",
+        loop: true,
+        coverflowEffect: {
+          rotate: 1,
+          stretch: 0,
+          depth: 10,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

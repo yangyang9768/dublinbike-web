@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>dublin bike</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/top-bottom.css" />
+    <script>
+      window.onload = changeview;
+      window.onresize = changeview;
+      function changeview() {
+        var a = document.body.clientWidth < 500 ? "70vh" : "80vh";
+        document.querySelector("#new-window").style.height = a;
+      }
+    </script>
+    <script src="./js/adaptation.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      @keyframes newpic {
+        0% {
+          display: none;
+          background-color: rgba(41, 40, 40, 0.222);
+        }
+        40% {
+          color: rgba(255, 255, 255, 0.56);
+          background-color: rgba(41, 40, 40, 0.422);
+        }
+        100% {
+          color: rgba(255, 255, 255, 1);
+          background-color: rgba(41, 40, 40, 0.622);
+        }
+      }
+
+      .bikebox h2 {
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%);
+        text-transform: capitalize;
+        background-color: rgba(41, 40, 40, 0.11);
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        animation-name: newpic;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        padding: 1rem 1rem;
+        width: 60%;
+      }
+      .bike-pic-box img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg menu">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./images/title.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon fa fa-navicon"
+            style="
+              background: none;
+              color: #fff;
+              font-size: 2rem;
+              display: block;
+              text-align: center;
+              transform: translateY(30%);
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active submenu" href="./aboutus.html">
+              About us</a
+            >
+            <a class="nav-item nav-link submenu" href="./subscription.html"
+              >Subscription</a
+            >
+            <a class="nav-item nav-link submenu" href="./activities.html"
+              >Explore Dublin</a
+            >
+            <a class="nav-item nav-link submenu" href="./FAQ.html">FAQ</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section style="height: 80vh;" id="new-window">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper bike-pic-box">
+          <!-- Slides -->
+          <div class="swiper-slide bikebox">
+            <img
+              src="https://www.irishtimes.com/polopoly_fs/1.2752055.1470861459!/image/image.jpg_gen/derivatives/box_620_330/image.jpg"
+              alt="cycle-tribe"
+            />
+            <h2>
+              Always on the road without traffic
+            </h2>
+          </div>
+          <div class="swiper-slide bikebox">
+            <img
+              src="http://www.stickybottle.com/wp-content/uploads/2016/10/PP1.png"
+              alt="cycle-dublin-route"
+            />
+            <h2>
+              explore Dublin with our cycle tribe
+              <br />
+              change the way Dublin moves
+            </h2>
+          </div>
+          <div class="swiper-slide bikebox">
+            <img
+              src="https://www.chopped.ie/wp-content/uploads/2018/07/New-Home-Page-Slide-imagery_4.FRANCHISE-Medium.jpg"
+              alt="cycle-scheme"
+            />
+            <h2>
+              freshly chopped Dublin Bikes
+            </h2>
+          </div>
+          <div class="swiper-slide bikebox" title="bike-pic-box">
+            <img
+              src="https://www.cairn.ie/wp-content/galleries/dublin-bike-scheme-docklands/dsc_3050m.jpg"
+              alt="green-life-style"
+            />
+            <h2>
+              have fun without fuel <br />
+              change the world with Dublin Bikes
+            </h2>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+      </div>
+    </section>
+    <footer>
+      <div class="container" style="max-width: 100%; margin: 0;">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 download">
+            <div class="apple-download">
+              <a
+                href="
+                      #"
+              >
+                <img src="./images/androidapp1.png" alt="bike-android"
+              /></a>
+            </div>
+            <div class="apple-download">
+              <a href="#">
+                <img src="./images/appleapp1.png" alt="bike-android"
+              /></a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 outlink container">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" style="font-size: 24px;"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-twitter" style="font-size: 24px;"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-instagram" style="font-size: 24px;"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-4 contactus">
+            <a href="#">contact us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          waitForTransition: true,
+        },
+        fadeEffect: {
+          crossFade: true,
+        },
+        lazy: {
+          loadPrevNext: true,
+        },
+
+        // zoom: {
+        //   maxRatio: 5
+        // }
+      });
+    </script>
+  </body>
+</html>

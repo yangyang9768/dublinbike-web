@@ -1,0 +1,41 @@
+@keyframes newpic {
+  0% {
+    opacity: 50%;
+    background-color: rgba(41, 40, 40, 0.322);
+    top: 30%;
+  }
+  40% {
+    opacity: 70%;
+    background-color: rgba(41, 40, 40, 0.422);
+    top: 40%;
+  }
+  100% {
+    opacity: 50%;
+    background-color: rgba(41, 40, 40, 0.622);
+  }
+}
+.subpage-top img {
+  width: 100%;
+  display: block;
+  height: 25vh;
+}
+.subpage-top {
+  position: relative;
+}
+.subpage-top h2 {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%);
+  text-transform: capitalize;
+  background-color: rgba(41, 40, 40, 0.81);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  animation-name: newpic;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  padding: 1rem 1rem;
+  width: 60%;
+}
